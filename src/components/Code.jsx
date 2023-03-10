@@ -1,7 +1,6 @@
 import { Box, styled } from '@mui/material';
 import React from 'react';
 import EditorBox from './EditorBox';
-// import MSEditor from './MSEditor';
 
 const CodeBoxes = styled(Box)`
   display: flex;

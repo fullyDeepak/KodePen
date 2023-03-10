@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, styled } from '@mui/material';
-import { CloseFullscreen, OneK } from '@mui/icons-material';
+import { CloseFullscreen } from '@mui/icons-material';
 import Monaco from './Monaco';
 
 const Heading = styled(Box)`

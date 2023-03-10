@@ -10,41 +10,33 @@ const Monaco = (props) => {
   const handleEditorChange = (value, event) => {
     const setVal = eval(`set${props.boxName}val`);
     setLocalValue(value);
-    console.log('hello');
     setVal(value);
-    // console.log(HTMLval, CSSval, JSval);
   };
+
+  // getting stored value
   const [localValue, setLocalValue] = useState(() => {
-    // getting stored value
     const saved = localStorage.getItem(props.boxName);
     const initialValue = JSON.parse(saved);
-    localStorage.setItem(props.boxName, JSON.stringify(initialValue));
     return initialValue || '';
   });
 
+  //setting localStorage data to editors on first load
   useEffect(() => {
-    // const getFromLocal = eval(`${props.boxName}val`);
-    // console.log(getFromLocal);
     const localData = JSON.parse(localStorage.getItem(props.boxName));
-    console.log(JSON.parse(localStorage.getItem('HTML')));
     setLocalValue(localData);
-    localStorage.setItem(props.boxName, JSON.stringify(localData));
   }, []);
 
-  //bug here
+  //setting current data to localStorage only if it present
+  //useful for preveting rewriting or clearning on reload
   useEffect(() => {
     const setToLocal = eval(`${props.boxName}val`);
     if (setToLocal) {
       localStorage.setItem(props.boxName, JSON.stringify(setToLocal));
     }
   }, [HTMLval, CSSval, JSval]);
+
   return (
     <Editor
-      // options={{
-      //   minimap: {
-      //     enabled: false,
-      //   },
-      // }}
       theme='vs-dark'
       height='85%'
       defaultValue={localValue}
