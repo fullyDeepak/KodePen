@@ -6,3 +6,32 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: black; */
+}
+
+.buildname {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.buildname:visited {
+  color: inherit;
+}
+
+.buildname:hover {
+  color: gray;
+}
+
+.monaco-editor {
+  width: 100% !important;
+  height: 100%;
+}
+
+.overflow-guard {
+  width: 100% !important;
+}
