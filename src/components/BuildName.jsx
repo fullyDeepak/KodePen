@@ -8,7 +8,7 @@ const BuildName = () => {
       sx={{
         display: 'flex',
       }}>
-      Made with ❤️ by
+      Made with <span className='heart'>❤️</span> by
       <a className='buildname' href='https://github.com/fullyDeepak/'>
         &nbsp;Deepak
         <GitHub fontSize='10' />

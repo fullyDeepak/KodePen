@@ -24,8 +24,13 @@ const Header = styled(Box)`
 const EditorBoxDiv = styled(Box)`
   flex: 2;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-width: 0px 1px;
+  border-width: 1px 1px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
   flex-grow: 1;
+  &:focus-within {
+    border: 1px solid rgba(255, 255, 255, 0.9);
+  }
 `;
 
 const EditorBox = (props) => {
