@@ -22,7 +22,7 @@ const Results = () => {
     return () => clearTimeout(timeout);
   }, [HTMLval, CSSval, JSval]);
   return (
-    <Box>
+    <Box sx={{ height: '374px', overflow: 'hidden' }}>
       <iframe
         srcDoc={src}
         title='Output'
