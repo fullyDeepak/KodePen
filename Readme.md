@@ -31,6 +31,7 @@ https://user-images.githubusercontent.com/45789997/224474280-1d2bebfd-5975-421c-
 ## Features
 
 - Powered by our favorite VS Code editor
+- All your code will be saved in your browser, so when you open the URL again all your code will be right there.
 - Each editor can be collapse and expand separately.
 - Auto render code (within 1 sec)
 - Smart Auto-completion suggestion
