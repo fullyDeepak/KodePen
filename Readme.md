@@ -10,7 +10,9 @@ A Codepen clone, built with ReactJS, Monaco Editor and Material UI.
 
 ## Preview
 
-[label](presentation/Kodepen_vid.mp4)
+
+https://user-images.githubusercontent.com/45789997/224474280-1d2bebfd-5975-421c-9efc-792181c80aad.mp4
+
 
 ## Installing
 
